@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="./src/styles.css" /> -->
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <div class="modalcontainer hide">
+      <div class="modal">
+        <!-- <form action="" class="form"> -->
+          <div class="inputgroup">
+            <label for="note">Enter new note: </label>
+            <textarea
+              id="note"
+              name="note"
+              type="text"
+              placeholder="enter new note"
+            ></textarea>
+            <input type="submit" class="btn"></input>
+          </div>
+        <!-- </form> -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="status nostatus">
+        <h1>No status</h1>
+
+        <button class="addbtn">Add todo +</button>
+        <div class="note" draggable="true">
+          note sample 1 sample sample sample sample
+          <span class="close"> &times; </span>
+        </div>
+        <div class="note" draggable="true">
+          note sample 1
+          <span class="close"> &times; </span>
+        </div>
+        <div class="note" draggable="true">
+          note sample 2
+          <span class="close"> &times; </span>
+        </div>
+        <div class="note" draggable="true">
+          note sample 3
+          <span class="close"> &times; </span>
+        </div>
+        <div class="note" draggable="true">
+          note sample 4
+          <span class="close"> &times; </span>
+        </div>
+      </div>
+      <div class="status">
+        <h1>Not started</h1>
+      </div>
+      <div class="status">
+        <h1>In progress</h1>
+      </div>
+      <div class="status">
+        <h1>Completed</h1>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
